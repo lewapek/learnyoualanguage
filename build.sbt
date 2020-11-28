@@ -1,6 +1,6 @@
 name := "LearnYouALanguage"
 
-version := "0.0.1"
+version := "0.1.0"
 
 scalaVersion := "2.13.3"
 
@@ -21,10 +21,6 @@ libraryDependencies ++= Seq(
   "org.http4s"     %% "http4s-blaze-server" % Http4sVersion,
   "org.http4s"     %% "http4s-dsl"          % Http4sVersion,
   "org.http4s"     %% "http4s-circe"        % Http4sVersion,
-  "org.tpolecat"   %% "doobie-core"         % DoobieVersion,
-  "org.tpolecat"   %% "doobie-postgres"     % DoobieVersion,
-  "org.tpolecat"   %% "doobie-hikari"       % DoobieVersion,
-  "com.h2database" % "h2"                   % H2Version,
   "org.flywaydb"   % "flyway-core"          % FlywayVersion,
   "ch.qos.logback" % "logback-classic"      % LogbackVersion,
   "org.postgresql" % "postgresql"           % "42.2.8",
