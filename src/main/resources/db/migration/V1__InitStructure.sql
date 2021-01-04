@@ -32,8 +32,8 @@ CREATE TABLE learning_stats (
   last_hits_in_row   int                      NOT NULL,
   last_misses_in_row int                      NOT NULL
 );
-CREATE UNIQUE INDEX i_learning_stats__hits ON learning_stats (hits);
-CREATE UNIQUE INDEX i_learning_stats__misses ON learning_stats (misses);
-CREATE UNIQUE INDEX i_learning_stats__hits_ratio ON learning_stats (hits_ratio);
-CREATE UNIQUE INDEX i_learning_stats__last_hit ON learning_stats (last_hit);
-CREATE UNIQUE INDEX i_learning_stats__last_miss ON learning_stats (last_miss);
+CREATE INDEX i_learning_stats__hits ON learning_stats (hits);
+CREATE INDEX i_learning_stats__misses ON learning_stats (misses);
+CREATE INDEX i_learning_stats__hits_ratio ON learning_stats (hits_ratio);
+CREATE INDEX i_learning_stats__last_hit ON learning_stats (last_hit);
+CREATE INDEX i_learning_stats__last_miss ON learning_stats (last_miss);
